@@ -30,8 +30,8 @@ export default function Home() {
         <h1>Popular</h1>
         <div className="popular_container">
           {
-            products.map(({ img, name, prize }) =>
-              <ProductCard href="/product" img={img} name={name} prize={prize} />
+            products.map(({ img, name, prize },i) =>
+              <ProductCard key={name+i} href="/product" img={img} name={name} prize={prize} />
             )
           }
         </div>

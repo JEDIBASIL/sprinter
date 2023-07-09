@@ -48,8 +48,8 @@ function Product() {
                 <h2>Related items</h2>
                 <div className="popular_container">
                     {
-                        products.slice(0,5).map(({ img, name, prize }) =>
-                            <div className="card">
+                        products.slice(0,5).map(({ img, name, prize },i) =>
+                            <div key={name+i} className="card">
                                 <div className="img">
                                     <Image fill src={img} alt={name} />
                                 </div>

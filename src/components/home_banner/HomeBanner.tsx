@@ -10,8 +10,8 @@ function HomeBanner() {
                     <Image fill src="https://images.pexels.com/photos/8979070/pexels-photo-8979070.jpeg" alt="wer" />
                 </div>
                 <div className={style.text}>
-                    <h1>It's your time</h1>
-                    <h1>It's your style</h1>
+                    <h1>It&apos;s your time</h1>
+                    <h1>It&apos;s your style</h1>
                     <button>Shop now</button>
                 </div>
             </div>
