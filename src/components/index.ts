@@ -1,4 +1,5 @@
 import AppTopBar from "./app_top_bar/AppTopBar";
+import AuthTopBar from "./auth_top_bar/AuthTopBar";
 import Footer from "./footer/Footer";
 import HeroSection from "./hero_section/HeroSection";
 import HomeBanner from "./home_banner/HomeBanner";
@@ -11,5 +12,6 @@ export {
     SubscribeCard,
     ProductCard,
     HeroSection,
-    HomeBanner
+    HomeBanner,
+    AuthTopBar
 }

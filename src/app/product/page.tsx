@@ -1,5 +1,5 @@
 "use client"
-import { AppTopBar, Footer, SubscribeCard } from '@/components'
+import { AppTopBar, Footer, ProductCard, SubscribeCard } from '@/components'
 import style from "../../assets/styles/modules/product.module.css"
 import Image from 'next/image'
 import { Chip, Divider, Group } from '@mantine/core'
@@ -48,14 +48,8 @@ function Product() {
                 <h2>Related items</h2>
                 <div className="popular_container">
                     {
-                        products.slice(0,5).map(({ img, name, prize },i) =>
-                            <div key={name+i} className="card">
-                                <div className="img">
-                                    <Image fill src={img} alt={name} />
-                                </div>
-                                <h3>{name}</h3>
-                                <p>{prize}</p>
-                            </div>
+                        products.slice(0, 5).map(({ img, name, prize }, i) =>
+                            <ProductCard key={name + i} href="/product" img={img} name={name} prize={prize} />
                         )
                     }
                 </div>
