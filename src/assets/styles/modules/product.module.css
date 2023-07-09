@@ -1,0 +1,70 @@
+.product_container{
+    padding: 50px 5%;
+}
+
+.product_display{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.product_preview{
+    width: 500px;
+    min-width: 500px;
+    height: 480px;
+    display: flex;
+    gap: 15px;
+}
+
+.images_container{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1px solid gainsboro;
+    position: relative;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_card{
+    width: 100%;
+    height: 120px;
+    background-color: whitesmoke;
+    border: 1px solid gainsboro;
+}
+
+.description {
+    max-width: 500px;
+}
+
+.description h1 {
+    margin-bottom: 10px;
+}
+
+.description p{
+    font-size: 18px;
+}
+
+.description button {
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+  }
