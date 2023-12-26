@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import style from "../../assets/styles/modules/product_card.module.css"
+import style from "./product_card.module.css"
 interface ProductCardProps {
     href: string,
     img: string,

@@ -1,35 +1,38 @@
 "use client"
 import { ActionIcon, Burger, Drawer, Flex, TextInput } from '@mantine/core'
-import style from "../../assets/styles/modules/app_topbar.module.css"
+import style from "./app_topbar.module.css"
 import { RiAccountCircleLine, RiSearchLine, RiShoppingBag3Line } from "react-icons/ri"
 import { useState } from 'react'
+import Link from 'next/link'
 function AppTopBar() {
-  const [drawer,setDrawer] = useState(false)
+  const [drawer, setDrawer] = useState(false)
   return (
     <div className={style.app_topbar}>
-      <Drawer onClose={()=> setDrawer(false)} opened={drawer} position='left'>
+      <Drawer onClose={() => setDrawer(false)} opened={drawer} position='left'>
         <ul>
           <li>Home</li>
           <li></li>
         </ul>
       </Drawer>
-        <div className={style["burger_icon"]}>
-        <Burger onClick={()=> setDrawer(true)} opened={drawer} />
+      <div className={style["burger_icon"]}>
+        <Burger onClick={() => setDrawer(true)} opened={drawer} />
       </div>
-      <a className={style.logo} href="">Sprinter</a>
-      <TextInput w={500} size={"md"} icon={<RiSearchLine size={25} />} placeholder='Search' />
+      <Link className={style.logo} href="/">Sprinter</Link>
+      <TextInput radius={"xl"} w={500} size={"md"} icon={<RiSearchLine size={25} />} placeholder='Search' />
       <Flex className={style.icon_container} gap={20}>
-        <ActionIcon>
-          <RiShoppingBag3Line size={25} />
-        </ActionIcon>
+        <Link href={"/cart"}>
+          <ActionIcon>
+            <RiShoppingBag3Line size={25} />
+          </ActionIcon>
+        </Link>
 
-        <ActionIcon>
-          <RiAccountCircleLine size={25} />
-        </ActionIcon>
+        <Link href={"/profile"}>
+          <ActionIcon>
+            <RiAccountCircleLine size={25} />
+          </ActionIcon>
+        </Link>
 
-      </Flex> 
-
-    
+      </Flex>
     </div>
   )
 }

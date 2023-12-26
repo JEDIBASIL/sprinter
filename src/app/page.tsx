@@ -36,8 +36,8 @@ export default function Home() {
           }
         </div>
       </div>
-      <HomeBanner />
-      <SubscribeCard />
+      {/* <HomeBanner /> */}
+      {/* <SubscribeCard /> */}
       <Footer />
     </div>
 

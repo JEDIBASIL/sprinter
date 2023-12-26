@@ -1,4 +1,4 @@
-import style from "../../assets/styles/modules/app_topbar.module.css"
+import style from "./app_topbar.module.css"
 import Link from "next/link"
 function AuthTopBar() {
   return (

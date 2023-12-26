@@ -69,7 +69,7 @@
 
 
 .category {
-  padding: 50px 5%;
+  padding: 30px 5%;
   margin-top: 50px;
   background-color: whitesmoke;
 }
@@ -79,8 +79,8 @@
   align-items: center;
   margin: 0px auto;
   margin-top: 30px;
-  gap: 15px;
   overflow: auto;
+  gap: 20px;
 }
 
 .category .category_container::-webkit-scrollbar{
@@ -91,27 +91,27 @@
 
 .category .category_container .card {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 5px 20px;
-  position: relative;
-  width: 200px;
-  max-width: 200px;
-  min-width: 180px;
-  height: 100px;
-  overflow: hidden;
+  width: 100%;
+  min-width: 200px;
   border-radius: 5px;
+  background-color: white;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 
 
 .category .category_container .card .img {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 120px;
   left: 0;
   top: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .category .category_container .card .img img {
@@ -121,7 +121,6 @@
 }
 
 .category .category_container .card .img::after{
-  position: absolute;
   content: "";
   width: 100%;
   height: 100%;
@@ -129,14 +128,16 @@
 }
 
 .category .category_container .card p {
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  font-size: 30px;
+  font-size: 16px;
+  color: rgb(63, 63, 63);
+  font-size: 16px;
   z-index: 3;
   position: relative;
   text-align: center;
-  width: 100%;
+  width: max-content;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 5px 20px;
 }
 
 .popular {
@@ -158,7 +159,6 @@
 .products {
   padding: 0px 5%;
   width: 100%;
-
 }
 
 .products_container {

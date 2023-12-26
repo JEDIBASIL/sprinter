@@ -1,4 +1,4 @@
-import styles from "../../assets/styles/modules/footer.module.css"
+import styles from "./footer.module.css"
 import { RiInstagramFill, RiFacebookBoxFill, RiTwitterFill } from 'react-icons/ri'
 
 function Footer() {

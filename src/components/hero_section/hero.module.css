@@ -2,6 +2,7 @@
   padding: 50px 5%;
   align-items: center;
   display: flex;
+  gap: 30px;
   justify-content: space-between;
 }
 
@@ -21,6 +22,22 @@
   border-radius: 5px;
 }
 
+.prize_container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 5px;
+}
+
+.prize_container p{
+  font-size: 30px;
+}
+
+.prize_container p:nth-child(2){
+  color: gray;
+  text-decoration: line-through;
+}
+
 .hero_section .img_container .img {
   width: 350px;
   height: 430px;
@@ -29,7 +46,7 @@
 
 .hero_section .img_container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 20px;
 }
 

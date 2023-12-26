@@ -1,12 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
-import style from "../../assets/styles/modules/hero.module.css"
+import style from "./hero.module.css"
 function HeroSection() {
     return (
         <>
             <div className={style.hero_section}>
                 <div className={style.text}>
-                    <h1>Style that speaks volumes</h1>
+                    <h1>Stone Island purple Jacket</h1>
+                    <div className={style.prize_container}>
+                        <p>$200</p>
+                        <p>-12%</p>
+                    </div>
                     <button>Shop now</button>
                 </div>
                 <div className={style.img_container}>

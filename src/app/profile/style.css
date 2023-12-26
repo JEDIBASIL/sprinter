@@ -1,0 +1,14 @@
+.profile_container{
+    padding: 30px 5%;
+}
+
+.profile_content{
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+}
+
+.profile_container .box{
+    margin-bottom: 20px;
+}

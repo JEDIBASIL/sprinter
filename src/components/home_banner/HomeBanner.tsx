@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import style from "../../assets/styles/modules/home_banner.module.css"
+import style from "./home_banner.module.css"
 function HomeBanner() {
     return (
         <>
